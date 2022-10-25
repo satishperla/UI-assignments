@@ -1,99 +1,113 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Flexbox Assignment 3</title>
-        <style>
-            body{
-                width: 50%;
-                align-content: center;
-                margin-left: 30%;
-                border: 5px solid gray;
-                border-radius: 10px;
-                text-align: center;
-                
-            }
-            div{
-                border-radius: 10px;
-                margin: 5px;
-            }
-            .container{
-                display: flex;
-                flex-direction: column;
-                background-color: orange;
-            }
-            .header-container{
-                border: 5px solid gray;
-                padding: 40px;
-                background-color: lightgray;
-                text-align: center;
-            }
-            .body-container{
-                height: 500px;
-                display: flex;
-                flex-direction: row;
-                text-align: center;
-            }
-            .footer-container{
-                padding: 40px;
-                text-align: center;
-                border: 5px solid gray;
-                background-color: lightgray;
-            }
-            .nav-container{
-                width: 20%;
-                padding-top: 30%;
-                text-align: center;
-                border: 5px solid gray;
-                background-color: lightgray;
-            }
-            .section-container{
-                width: 60%;
-                border: 5px solid gray;
-                background-color: lightgray;
-                display: flex;
-                flex-direction: column;
-            }
-            .aside-container{
-                width: 20%;
-                padding-top: 30%;
-                text-align: center;
-                border: 5px solid gray;
-                background-color: lightgray;
-            }
-            .body-header{
-                padding: 40px;
-                text-align: center;
-                margin-top: 40px;
-                border: 5px solid gray;
-                background-color:lightgray;
-            }
-            .body-article{
-                padding: 80px;
-                text-align: center;
-                border: 5px solid gray;
-                background-color: lightgray;
-            }
-            .body-footer{
-                padding: 40px;
-                text-align: center;
-                border: 5px solid gray;
-                background-color: lightgray;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="header-container">Header</div>
-            <div class="body-container">
-                <div class="nav-container">navcontainer</div>
-                <div class="section-container">
-                    <div class="body-header">body header</div>
-                    <div class="body-article">body article</div>
-                    <div class="body-footer">Body footer</div>
-                </div>
-                <div class="aside-container">Aside</div>
+
+<head>
+    <title>Flexbox Assignment 3</title>
+    <style>
+        body {
+            width: 50%;
+            align-content: center;
+            margin: auto;
+            border: 5px solid gray;
+            border-radius: 10px;
+            text-align: center;
+
+        }
+
+        div {
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            background-color: orange;
+        }
+
+        .header-container {
+            border: 5px solid gray;
+            padding: 40px;
+            background-color: lightgray;
+            text-align: center;
+        }
+
+        .body-container {
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+        }
+
+        .footer-container {
+            padding: 40px;
+            text-align: center;
+            border: 5px solid gray;
+            background-color: lightgray;
+        }
+
+        .nav-container {
+            width: 20%;
+            padding-top: 30%;
+            text-align: center;
+            border: 5px solid gray;
+            background-color: lightgray;
+        }
+
+        .section-container {
+            width: 60%;
+            border: 5px solid gray;
+            background-color: lightgray;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .aside-container {
+            width: 20%;
+            padding-top: 30%;
+            text-align: center;
+            border: 5px solid gray;
+            background-color: lightgray;
+        }
+
+        .body-header {
+            padding: 40px;
+            text-align: center;
+            margin-top: 40px;
+            border: 5px solid gray;
+            background-color: lightgray;
+        }
+
+        .body-article {
+            padding: 80px;
+            text-align: center;
+            border: 5px solid gray;
+            background-color: lightgray;
+        }
+
+        .body-footer {
+            padding: 40px;
+            text-align: center;
+            border: 5px solid gray;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-container">Header</div>
+        <div class="body-container">
+            <div class="nav-container">navcontainer</div>
+            <div class="section-container">
+                <div class="body-header">body header</div>
+                <div class="body-article">body article</div>
+                <div class="body-footer">Body footer</div>
             </div>
-            <div class="footer-container">Footer</div>
+            <div class="aside-container">Aside</div>
         </div>
-    </body>
+        <div class="footer-container">Footer</div>
+    </div>
+</body>
+
 </html>

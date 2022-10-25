@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Login Form</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(204, 122, 204);
+        }
+
+        div {
+            border-radius: 10px;
+            background-color: white;
+            padding: 10px 20px 10px 20px;
+            margin: 10px 20px 10px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: black;
+        }
+
+        .container {
+            border: 2px solid;
+            width: 500px;
+            height: auto;
+            margin: auto;
+            margin-top: 100px;
+
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .new-user {
+            text-align: center;
+        }
+
+        .sociallogin {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-radius: 8px;
+        }
+
+        .facebook,
+        .google {
+            width: 30%;
+        }
+
+        img {
+            width: 150px;
+            height: 50px;
+        }
+
+        .form-container {
+            margin: 0px;
+        }
+
+        a {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2> Sign In With</h2>
+        <div class="sociallogin">
+            <div class="facebook">
+                <button><img src="facebook-icon.jpg"></button>
+            </div>
+            <div class="google">
+                <button><img src="google-logo.jpg"></button>
+            </div>
+        </div>
+        <div class="form-container">
+            <form>
+                <label for="usernmae">Username</label><br>
+                <input type="text" id="username" name="username"><br>
+
+                <label for="pw">Password</label> <a class="forgotpw" href="#">Forgot?</a> <br>
+                <input type="password" id="pw" name="pw"><br>
+                <input type="submit" value="Sign in"><br>
+            </form>
+        </div>
+        <div class="new-user">
+            <p>Not a member?<a href="#">Signup now.</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
