@@ -1,0 +1,70 @@
+@mixin flex($align: center, $direction: row) {
+    display: flex;
+    justify-content: $align;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+body {
+    @include flex;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    @include flex(space-evenly);
+    width: 700px;
+    height: 300px;
+    background: rgb(158, 156, 156);
+}
+
+.left_col {
+    @include flex;
+    background: rgb(230, 81, 81);
+    width: 35%;
+    height: 90%;
+}
+
+.right_col {
+    @include flex(space-between, column);
+    width: 55%;
+    height: 90%;
+}
+
+.right_col-top {
+    @include flex;
+    background: rgb(164, 241, 92);
+    width: 100%;
+    height: 40%;
+}
+
+.right_col-bottom {
+    @include flex(space-between, row);
+    width: 100%;
+    height: 50%;
+}
+
+.right_col-bottom-left {
+    @include flex;
+    background: pink;
+    width: 54%;
+    height: 100%;
+}
+
+.right_col-bottom-right {
+    @include flex(space-between, column);
+    width: 40%;
+    height: 100%;
+}
+
+.small-box {
+    @include flex;
+    background: rgb(82, 115, 223);
+    width: 100%;
+    height: 45%;
+}
+

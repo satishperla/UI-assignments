@@ -1,0 +1,82 @@
+
+$color-container: pink;
+$color-header :rgb(113, 205, 228);
+$color-aside:rgb(211, 211, 211);
+$color-article:rgb(216, 85, 85);
+$color-image:lightgray;
+
+$height-section: 30px;
+$flex-display: flex;
+$flex-row: row;
+
+$d:"direction";
+$c:"color";
+body {
+    width: 35%;
+    align-content: center;
+    margin-left: 30%;
+    text-align: center;
+}
+
+div {
+
+    margin: 5px;
+    padding: 5px;
+}
+
+.container {
+    display: $flex-display;
+    flex-#{$d}: column;
+    background-#{$c}: $color-container;
+}
+
+.header-container {
+    height: $height-section;
+
+    background-#{$c}: $color-header;
+}
+
+.body-container {
+    height: 300px;
+    display: $flex-display;
+    flex-direction: $flex-row;
+}
+
+.footer-container {
+    height: $height-section;
+
+    background-#{$c}: $color-header;
+}
+
+.aside-container {
+    width: 20%;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    background-#{$c}: $color-aside;
+}
+
+.article-container {
+    width: 80%;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-#{$c}: $color-article;
+    
+}
+.image-container{
+    width: 100%;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 160px;
+    display: $flex-display;
+    flex-direction: $flex-row;
+}
+
+
+.image {
+    width: 30%;
+    height: 100px;
+    background-#{$c}: $color-image;    
+}
